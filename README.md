@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 網頁切版直播班 Vite 範例 - Bootstrap 版本
 
 ## Node.js 版本
@@ -46,3 +47,6 @@ git push -u origin main // 僅限第一次輸入，往後只需要輸入 git pus
 ```
 
 3. 初始化完畢後，執行 `npm run deploy` 指令進行自動化部署
+=======
+# B.B-Station
+>>>>>>> 29692b7d8659d53760f99f0032c4f88bc6550ef4
