@@ -1,4 +1,20 @@
-.footer {
+footer {
   background: #6abfdd;
-  font-size: 64px;
+}
+.footer-nav {
+  border-bottom: 1px solid #e3f4f8;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.nav-link {
+  color: $primary-50;
+  font-weight: 700;
+}
+
+.copyright {
+  color: $primary-50;
+  font-size: 14px;
+  text-align: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
