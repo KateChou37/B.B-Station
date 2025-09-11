@@ -25,6 +25,7 @@ $black: #000 !default;
 // fusv-disable
 // scss-docs-start gray-colors-map
 $grays: (
+  "50": $gray-50,
   "100": $gray-100,
   "200": $gray-200,
   "300": $gray-300,
@@ -317,6 +318,12 @@ $secondary-200: #f8e885;
 $secondary-300: #f4e054;
 $secondary: $secondary-200;
 
+$highligh-100: #fec5bb;
+$highligh-200: #fd9f90;
+$highligh-300: #fc7b69;
+$highligh-400: #e54c4c;
+$highligh-500: #bf0e46;
+
 // $primary:       $blue !default;
 // $secondary:     $gray-600 !default;
 $success: $green !default;
@@ -343,6 +350,13 @@ $theme-colors: (
   "secondary-200": $secondary-200,
   "secondary-300": $secondary-300,
 
+  "highligh-100": $highligh-100,
+  "highligh-200": $highligh-200,
+  "highligh-300": $highligh-300,
+  "highligh-400": $highligh-400,
+  "highligh-500": $highligh-500,
+
+  "gray-50": $gray-50,
   "gray-100": $gray-100,
   "gray-700": $gray-700,
 
@@ -466,7 +480,7 @@ $spacers: (
 
   // 3: $spacer,
   // 4: $spacer * 1.5,
-  // 5: $spacer * 3,,,,,,,,,,,,,,,
+  // 5: $spacer * 3,,,,,,,,,,,,,,,,,,,,,
 ) !default;
 // scss-docs-end spacer-variables-maps
 
