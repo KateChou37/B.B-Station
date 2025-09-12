@@ -317,7 +317,7 @@ $theme-colors: (
   "warning":    $warning,
   "danger":     $danger,
   "light":      $light,
-  "dark":       $dark
+  "dark":       $dark 
 ) !default;
 // scss-docs-end theme-colors-map
 
@@ -506,7 +506,7 @@ $container-max-widths: (
   lg: 960px,
   xl: 1140px,
   // xxl: 1320px
-  xxl:1290px
+  xxl:1290px 
 
 ) !default;
 // scss-docs-end container-max-widths
