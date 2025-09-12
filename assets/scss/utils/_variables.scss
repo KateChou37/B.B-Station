@@ -572,7 +572,14 @@ $container-max-widths: (
   md: 720px,
   lg: 960px,
   xl: 1140px,
-  xxl: 1320px
+<<<<<<<<< Temporary merge branch 1
+  // xxl: 1320px,
+  xxl: 1296px,
+=========
+  // xxl: 1320px
+  xxl:1290px 
+
+>>>>>>>>> Temporary merge branch 2
 ) !default;
 // scss-docs-end container-max-widths
 
