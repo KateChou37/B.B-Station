@@ -309,7 +309,7 @@ $primary-500: #189ec7;
 $primary-400: #3faad5;
 $primary-300: #6abfdd;
 $primary-200: #8dd1e7;
-$primary-100: #8dd1e7;
+$primary-100: #B7E3F1; 
 $primary-50: #e3f4f8;
 $primary: $primary-600;
 
@@ -468,22 +468,52 @@ $spacer: 16px;
 $spacers: (
   0: 0,
   1: $spacer * 0.25,
+  //4
   2: $spacer * 0.5,
+  //8
   3: $spacer * 0.75,
+  //12
   4: $spacer,
+  //16
   5: $spacer * 1.25,
+  //20
   6: $spacer * 1.5,
+  //24
   7: $spacer * 1.75,
+  //28
   8: $spacer * 2,
+  //32
   9: $spacer * 2.25,
+  //36
   10: $spacer * 2.5,
+  //40
   11: $spacer * 2.75,
+  //44
   12: $spacer * 3,
+  //48
+  13: $spacer * 3.5,
+  //56
+  14: $spacer * 4,
+  //64
+  15: $spacer * 4.5,
+  //72
+  16: $spacer * 5,
+  //80
+  17: $spacer * 5.5,
+  //88
+  18: $spacer * 6,
+  //96
+  19: $spacer *7,
+  //112
+  20: $spacer *7.5,
+  //120
+  21: $spacer *10,
+  //160
 
   // 3: $spacer,
   // 4: $spacer * 1.5,
   // 5: $spacer * 3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-) !default;
+) ;
 // scss-docs-end spacer-variables-maps
 
 // Position
