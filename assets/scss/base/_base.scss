@@ -16,4 +16,7 @@ a {
   display: inline-block;
   // text-decoration: none;
   color: inherit;
+  :hover {
+    border-bottom: #f8e885;
+  }
 }

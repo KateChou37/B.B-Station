@@ -311,7 +311,7 @@ $primary-300: #6abfdd;
 $primary-200: #8dd1e7;
 $primary-100: #8dd1e7;
 $primary-50: #e3f4f8;
-$primary: $primary-300;
+$primary: $primary-600;
 
 $secondary-50: #f2f3e8;
 $secondary-100: #fcf2b1;
@@ -482,7 +482,7 @@ $spacers: (
 
   // 3: $spacer,
   // 4: $spacer * 1.5,
-  // 5: $spacer * 3,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+  // 5: $spacer * 3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ) !default;
 // scss-docs-end spacer-variables-maps
 
@@ -1266,13 +1266,15 @@ $nav-link-padding-x: 1rem !default;
 $nav-link-font-size: null !default;
 $nav-link-font-weight: null !default;
 $nav-link-color: var(--#{$prefix}link-color) !default;
-$nav-link-hover-color: var(--#{$prefix}link-hover-color) !default;
+// $nav-link-hover-color: var(--#{$prefix}link-hover-color) !default;
+$nav-link-hover-color: #258fc1 !default;
 $nav-link-transition: color 0.15s ease-in-out,
   background-color 0.15s ease-in-out, border-color 0.15s ease-in-out !default;
 $nav-link-disabled-color: var(--#{$prefix}secondary-color) !default;
 $nav-link-focus-box-shadow: $focus-ring-box-shadow !default;
 
-$nav-tabs-border-color: var(--#{$prefix}border-color) !default;
+// $nav-tabs-border-color: var(--#{$prefix}border-color) !default;
+$nav-tabs-border-color: #f8e885 !default;
 $nav-tabs-border-width: var(--#{$prefix}border-width) !default;
 $nav-tabs-border-radius: var(--#{$prefix}border-radius) !default;
 $nav-tabs-link-hover-border-color: var(--#{$prefix}secondary-bg)
@@ -1281,14 +1283,14 @@ $nav-tabs-link-active-color: var(--#{$prefix}emphasis-color) !default;
 $nav-tabs-link-active-bg: var(--#{$prefix}body-bg) !default;
 $nav-tabs-link-active-border-color: var(--#{$prefix}border-color)
   var(--#{$prefix}border-color) $nav-tabs-link-active-bg !default;
-
 $nav-pills-border-radius: var(--#{$prefix}border-radius) !default;
 $nav-pills-link-active-color: $component-active-color !default;
 $nav-pills-link-active-bg: $component-active-bg !default;
 
 $nav-underline-gap: 1rem !default;
 $nav-underline-border-width: 0.125rem !default;
-$nav-underline-link-active-color: var(--#{$prefix}emphasis-color) !default;
+// $nav-underline-link-active-color: var(--#{$prefix}emphasis-color) !default;
+$nav-underline-link-active-color: #f8e885 !default;
 // scss-docs-end nav-variables
 
 // Navbar
@@ -1320,14 +1322,18 @@ $navbar-toggler-focus-width: $btn-focus-width !default;
 $navbar-toggler-transition: box-shadow 0.15s ease-in-out !default;
 
 $navbar-light-color: rgba(var(--#{$prefix}emphasis-color-rgb), 0.65) !default;
-$navbar-light-hover-color: rgba(
-  var(--#{$prefix}emphasis-color-rgb),
-  0.8
-) !default;
-$navbar-light-active-color: rgba(
-  var(--#{$prefix}emphasis-color-rgb),
-  1
-) !default;
+
+// $navbar-light-hover-color: rgba(
+//   var(--#{$prefix}emphasis-color-rgb),
+//   0.8
+// ) !default;
+$navbar-light-hover-color: #258fc1 !default;
+
+// $navbar-light-active-color: rgba(
+//   var(--#{$prefix}emphasis-color-rgb),
+//   1
+// ) !default;
+$navbar-light-active-color: #258fc1 !default;
 $navbar-light-disabled-color: rgba(
   var(--#{$prefix}emphasis-color-rgb),
   0.3
