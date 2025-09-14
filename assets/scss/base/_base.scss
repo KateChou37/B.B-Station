@@ -10,13 +10,18 @@ body {
 img {
   max-width: 100%;
   height: auto;
+  vertical-align: middle;
 }
 
 a {
   display: inline-block;
   // text-decoration: none;
   color: inherit;
+  margin: 0;
   :hover {
     border-bottom: #f8e885;
   }
+}
+p {
+  margin: 0;
 }
