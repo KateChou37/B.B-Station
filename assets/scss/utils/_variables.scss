@@ -309,7 +309,7 @@ $primary-500: #189ec7;
 $primary-400: #3faad5;
 $primary-300: #6abfdd;
 $primary-200: #8dd1e7;
-$primary-100: #B7E3F1; 
+$primary-100: #b7e3f1;
 $primary-50: #e3f4f8;
 $primary: $primary-600;
 
@@ -503,17 +503,16 @@ $spacers: (
   //88
   18: $spacer * 6,
   //96
-  19: $spacer *7,
+  19: $spacer * 7,
   //112
-  20: $spacer *7.5,
+  20: $spacer * 7.5,
   //120
-  21: $spacer *10,
+  21: $spacer * 10,
   //160
-
   // 3: $spacer,
   // 4: $spacer * 1.5,
-  // 5: $spacer * 3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-) ;
+  // 5: $spacer * 3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+) !default;
 // scss-docs-end spacer-variables-maps
 
 // Position
@@ -1317,7 +1316,8 @@ $nav-pills-border-radius: var(--#{$prefix}border-radius) !default;
 $nav-pills-link-active-color: $component-active-color !default;
 $nav-pills-link-active-bg: $component-active-bg !default;
 
-$nav-underline-gap: 1rem !default;
+// $nav-underline-gap: 1rem !default;
+$nav-underline-gap: 0rem !default;
 $nav-underline-border-width: 0.125rem !default;
 // $nav-underline-link-active-color: var(--#{$prefix}emphasis-color) !default;
 $nav-underline-link-active-color: #f8e885 !default;
