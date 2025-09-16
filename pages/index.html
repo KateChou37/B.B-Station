@@ -5,22 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>index</title>
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
   </head>
   <body>
     <%- include('./layout/header'); -%>
     <!-- 表頭 -->
-    <section>
-      <div class="title-banner container-fluid">
+     <section>
+      <div class="container-fluid title-banner px-0">
+        <div class="position-absolute title-depiction mt-21">
+          <img class="title-img mb-8 " src="/assets/images/hero_title.svg" alt="">
+          <div class="text-primary-600 d-flex align-items-center flex-column text-start">
+              <p class="mb-1"> 誕生於寶媽的心願，從一人轉向一群愛寶寶的父母 ——</p>
+              <p >想讓這些寶物延續溫度，傳遞給下一個需要的家庭。</p>
+          </div>
+        </div>
       </div>
     </section>
-
+    <!-- 收尋列 -->
+      <section>
+        <div class="container">
+          <div class="row d-flex justify-content-center bg-gray-100 rounded-pill">
+            <div class="col-10 d-flex justify-content-center py-4 px-12">
+          <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+   全部分類
+  </button>
+  <ul class="dropdown-menu">
+    <li><button class="dropdown-item" type="button">全部分類</button></li>
+    <li><button class="dropdown-item" type="button">Another action</button></li>
+    <li><button class="dropdown-item" type="button">Something else here</button></li>
+  </ul>
+</div>
+<form class="d-flex position-relative " role="search">
+        <input class="form-control  search-bar" type="search" placeholder="我要找寶物" aria-label="Search"/>
+        <button class="position-absolute end-0 btn btn-primary rounded-circle p-4 " type="submit">
+          <i class=" text-primary-300  " data-lucide="search"></i></button>
+</form>
+      </div>
+      </div>
+        </div>
+      </section>
 
 
     <%- include('./layout/footer'); -%>
+    
     <script type="module" src="../main.js"></script>
+
   </body>
 </html>
