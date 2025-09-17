@@ -512,7 +512,7 @@ $spacers: (
   //160
   // 3: $spacer,
   // 4: $spacer * 1.5,
-  // 5: $spacer * 3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+  // 5: $spacer * 3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ) !default;
 // scss-docs-end spacer-variables-maps
 
@@ -633,6 +633,18 @@ $border-widths: (
   3: 3px,
   4: 4px,
   5: 5px,
+
+  6: 6px,
+  7: 7px,
+  8: 8px,
+  9: 9px,
+  10: 10px,
+  11: 11px,
+  12: 12px,
+  13: 13px,
+  14: 14px,
+  15: 15px,
+  16: 16px,
 ) !default;
 $border-style: solid !default;
 $border-color: $gray-300 !default;
