@@ -511,7 +511,7 @@ $spacers: (
   //160
   // 3: $spacer,
   // 4: $spacer * 1.5,
-  // 5: $spacer * 3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+  // 5: $spacer * 3,,
 ) !default;
 // scss-docs-end spacer-variables-maps
 
@@ -632,7 +632,7 @@ $border-widths: (
   3: 3px,
   4: 4px,
   5: 5px,
-
+  // 以下新增
   6: 6px,
   7: 7px,
   8: 8px,
