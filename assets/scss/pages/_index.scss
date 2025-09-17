@@ -1,0 +1,29 @@
+.title-banner{
+    background-image:url(/assets/images/banner_desktop.jpg) ;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 880px;
+    border-radius: 0px 0px 128px 128px;
+    .title-depiction{
+       left: calc(100% / 2); 
+   } 
+    .title-img{
+        width: 564px;
+        
+    }
+    
+}
+.search-bar{
+   margin-top: -48px;
+}
+// 收尋攔
+.classification{
+    width: 212px;
+}
+
+
+.translate-middle{
+        transform: translate(-79%, -13%) !important;
+}
+

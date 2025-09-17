@@ -5,75 +5,79 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>index</title>
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
   </head>
   <body>
     <%- include('./layout/header'); -%>
     <!-- 表頭 -->
-    <section>
-      <div class="title-banner container-fluid">
-        <img src="/assets/images/banner_desktop.jpg" alt="" />
-      </div>
-    </section>
-
-    <button type="button" class="btn btn-primary">Primary</button>
-    <button type="button" class="btn btn-secondary">Secondary</button>
-    <button type="button" class="btn btn-success">Success</button>
-    <button type="button" class="btn btn-danger">Danger</button>
-    <button type="button" class="btn btn-warning">Warning</button>
-    <button type="button" class="btn btn-info">Info</button>
-    <button type="button" class="btn btn-light">Light</button>
-    <button type="button" class="btn btn-dark">Dark</button>
-
-    <button type="button" class="btn btn-link">Link</button>
-    <!-- Modal 按鈕 -->
-    <button
-      type="button"
-      class="btn btn-primary"
-      data-bs-toggle="modal"
-      data-bs-target="#exampleModal"
-    >
-      打開 modal
-    </button>
-
-    <!-- Modal 元件 -->
-    <div
-      class="modal fade"
-      id="exampleModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal 標題</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">內容</div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              關閉
-            </button>
-            <button type="button" class="btn btn-primary">確定</button>
+     <section>
+      <div class="container-fluid title-banner px-0">
+        <div class="position-absolute title-depiction mt-21">
+          <img class="title-img mb-8 " src="/assets/images/hero_title.svg" alt="">
+          <div class="text-primary-600 d-flex align-items-center flex-column text-start">
+              <p class="mb-1"> 誕生於寶媽的心願，從一人轉向一群愛寶寶的父母 ——</p>
+              <p >想讓這些寶物延續溫度，傳遞給下一個需要的家庭。</p>
           </div>
         </div>
       </div>
-    </div>
+    </section>
+    <!-- 收尋列 -->
+      <section>
+        <div class="container px-0 search-bar">
+          <div class="row d-flex justify-content-center ">
+            <div class="col-10  bg-gray-100 rounded-pill px-0 ">
+              <div class="d-flex  py-4 px-12">
+                  <div class="dropdown  text-gray-600 ">                      
+                      <select class=" form-select text-gray-600 bg-white dropdown-toggle classification py-5 px-8 rounded-end rounded-pill border input-group classification" id="inputGroupSelect02">
+                        <option selected>全部分類</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                      
+                  </div>
+                  <form class="d-flex position-relative justify-content-between input-group" role="search">
+                          <input class="form-control  py-5 px-4 rounded-start rounded-pill" type="search" placeholder="我要找寶物" aria-label="Search"/>
+                          <button class="position-absolute end-0 btn btn-primary rounded-circle p-3 m-2" type="submit">
+                            <i class=" text-white  " data-lucide="search"></i></button>
+                  </form>
+                </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    <!--  熱門分類 -->
+      <section>
+          <button type="button " class="btn rounded-circle position-relative button-Ghost-default-badge">
+             <i  class=" text-primary-300" data-lucide="handbag"></i>
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+              1
+              <span class="visually-hidden">unread messages</span>
+            </span>
+          </button>
+      </section> 
+        
+      <div class="card card-shadow-primary shadow-inset" style="width: 18rem;">
+  <div class="card-body shadow-inset ">
+    <h5 class="card-title">Card title</h5>
+    <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+    <a href="#" class="card-link">Card link</a>
+    <a href="#" class="card-link">Another link</a>
+  </div>
+</div>
+
 
     <%- include('./layout/footer'); -%>
+    
     <script type="module" src="../main.js"></script>
+
   </body>
 </html>
