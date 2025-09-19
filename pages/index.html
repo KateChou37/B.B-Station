@@ -24,24 +24,38 @@
     </section>
     <!-- 收尋列 -->
       <section>
-        <div class="container px-0 search-bar">
-          <div class="row d-flex justify-content-center ">
+        <div class="container px-0 search-bar ">
+          <div class="input-group mb-3 position-relative ">
+            <button class="btn bg-white dropdown-toggle  rounded-end rounded-pill" style="width: 212px" type="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</button>
+            <ul class="dropdown-menu " style="width: 212px">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><a class="dropdown-item" href="#">Separated link</a></li>
+            </ul>
+            <input type="text" class="form-control position-absolute" aria-label="Text input with dropdown button">
+            <button class=" end-0 btn btn-primary rounded-circle p-3 m-2 " type="submit">
+            <i class=" text-white " data-lucide="search"></i></button>
+           
+          </div>
+          <!-- <div class="row d-flex justify-content-center m-0">
             <div class="col-10  bg-gray-100 rounded-pill px-0 ">
               <div class="d-flex  py-4 px-12">
-                  <div class="dropdown  text-gray-600 ">                      
-                      <select class=" form-select text-gray-600 bg-white dropdown-toggle classification py-5 px-8 rounded-end rounded-pill border input-group classification" id="inputGroupSelect02">
-                        <option selected>全部分類</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                      </select>
-                      
+                  <div class="  "> 
+                    <a class=" bg-white d-flex justify-content-between classification py-5 px-8  rounded-end rounded-pill border input-group classification  " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                     全部分類</a>                     
+                        <ul class="dropdown-menu input-group mt-2 border-0 rounded-5 text-primary-600" style="width: 212px;">
+                          <li><a class="dropdown-item text-gray-600 paragraph-body-small fw-bold" href="#">分類</a></li>
+                          <li><a class="dropdown-item text-gray-600" href="#">全部分類</a></li>
+                          <li><a class="dropdown-item text-gray-600" href="#">嬰兒服飾</a></li>
+                          <li><a class="dropdown-item text-gray-600" href="#">男孩服飾</a></li>
+                          <li><a class="dropdown-item text-gray-600" href="#">女孩服飾</a></li>
+                          <li><a class="dropdown-item text-gray-600" href="#">玩具</a></li>
+                          <li><a class="dropdown-item text-gray-600" href="#">育兒書籍</a></li>
+                          <li><a class="dropdown-item text-gray-600" href="#">哺乳用品</a></li>
+                          <li><a class="dropdown-item text-gray-600" href="#">推車/安全座椅</a></li>
+                          <li><a class="dropdown-item text-gray-600" href="#">媽媽用品</a></li>
+                        </ul>                                           
                   </div>
                   <form class="d-flex position-relative justify-content-between input-group" role="search">
                           <input class="form-control  py-5 px-4 rounded-start rounded-pill" type="search" placeholder="我要找寶物" aria-label="Search"/>
@@ -50,7 +64,7 @@
                   </form>
                 </div>
             </div>
-          </div>
+          </div> -->
         </div>
       </section>
     <!--  熱門分類 -->
