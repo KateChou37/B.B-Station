@@ -16,7 +16,7 @@ $gray-400: #ced4da !default;
 $gray-500: #adb5bd !default;
 $gray-600: #6c757d !default;
 // $gray-700: #495057 !default;
-$gray-700: #646a71 ;
+$gray-700: #646a71;
 $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
 $black: #000 !default;
@@ -512,7 +512,7 @@ $spacers: (
   //160
   // 3: $spacer,
   // 4: $spacer * 1.5,
-  // 5: $spacer * 3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+  // 5: $spacer * 3,,,,,,,,,,,,
 ) !default;
 // scss-docs-end spacer-variables-maps
 
@@ -632,7 +632,7 @@ $border-widths: (
   3: 3px,
   4: 4px,
   5: 5px,
-
+  // 以下新增
   6: 6px,
   7: 7px,
   8: 8px,
@@ -666,9 +666,9 @@ $border-radius-2xl: $border-radius-xxl !default; // Deprecated in v5.3.0
 
 // scss-docs-start box-shadow-variables
 $box-shadow: 0 0.5rem 1rem rgba($black, 0.15) !default;
-$box-shadow-primary: 0 0.25rem  rgba($primary-300, 0.5);
-$box-shadow-gray: 0 0.25rem  rgba($gray-300, 1);
-$box-shadow-sm-gray: 0 0.125rem  rgba($gray-300, 1);
+$box-shadow-primary: 0 0.25rem rgba($primary-300, 0.5);
+$box-shadow-gray: 0 0.25rem rgba($gray-300, 1);
+$box-shadow-sm-gray: 0 0.125rem rgba($gray-300, 1);
 $box-shadow-sm: 0 0.125rem 0.25rem rgba($black, 0.075) !default;
 $box-shadow-lg: 0 1rem 3rem rgba($black, 0.175) !default;
 $box-shadow-inset: inset 0 1px 2px rgba($black, 0.075) !default;
@@ -745,12 +745,12 @@ $line-height-base: 1.5 !default;
 $line-height-sm: 1.25 !default;
 $line-height-lg: 2 !default;
 
-$h1-font-size: $font-size-base * 2.5 !default;
-$h2-font-size: $font-size-base * 2 !default;
-$h3-font-size: $font-size-base * 1.75 !default;
-$h4-font-size: $font-size-base * 1.5 !default;
-$h5-font-size: $font-size-base * 1.25 !default;
-$h6-font-size: $font-size-base !default;
+$h1-font-size: $font-size-base * 2.5 !default; //40
+$h2-font-size: $font-size-base * 2 !default; //32
+$h3-font-size: $font-size-base * 1.75 !default; //28
+$h4-font-size: $font-size-base * 1.5 !default; //24
+$h5-font-size: $font-size-base * 1.25 !default; //20
+$h6-font-size: $font-size-base !default; //16
 // scss-docs-end font-variables
 
 // scss-docs-start font-sizes
@@ -842,12 +842,17 @@ $mark-bg: $yellow-100 !default;
 // Customizes the `.table` component with basic values, each used across all table variations.
 
 // scss-docs-start table-variables
-$table-cell-padding-y: 0.5rem !default;
-$table-cell-padding-x: 0.5rem !default;
-$table-cell-padding-y-sm: 0.25rem !default;
-$table-cell-padding-x-sm: 0.25rem !default;
+// $table-cell-padding-y: 0.5rem !default;
+// $table-cell-padding-x: 0.5rem !default;
+$table-cell-padding-y: 0rem !default;
+$table-cell-padding-x: 0rem !default;
+// $table-cell-padding-y-sm: 0.25rem !default;
+// $table-cell-padding-x-sm: 0.25rem !default;
+$table-cell-padding-y-sm: 0rem !default;
+$table-cell-padding-x-sm: 0rem !default;
 
-$table-cell-vertical-align: top !default;
+// $table-cell-vertical-align: top !default;
+$table-cell-vertical-align: center !default;
 
 $table-color: var(--#{$prefix}emphasis-color) !default;
 $table-bg: var(--#{$prefix}body-bg) !default;
@@ -1080,9 +1085,11 @@ $form-color-width: 3rem !default;
 // scss-docs-end form-input-variables
 
 // scss-docs-start form-check-variables
-$form-check-input-width: 1em !default;
+// $form-check-input-width: 1em !default;
+$form-check-input-width: 1rem !default;
 $form-check-min-height: $font-size-base * $line-height-base !default;
-$form-check-padding-start: $form-check-input-width + 0.5em !default;
+// $form-check-padding-start: $form-check-input-width + 0.5em !default;
+$form-check-padding-start: $form-check-input-width + 0.5rem !default;
 $form-check-margin-bottom: 0.125rem !default;
 $form-check-label-color: null !default;
 $form-check-label-cursor: null !default;
@@ -1681,7 +1688,7 @@ $toast-header-border-color: $toast-border-color !default;
 
 // scss-docs-start badge-variables
 // $badge-font-size: 0.75em !default;
-$badge-font-size: 0.875em ;
+$badge-font-size: 0.875em;
 //14px
 // $badge-font-weight: $font-weight-bold !default;
 $badge-font-weight: $font-weight-normal !default;
