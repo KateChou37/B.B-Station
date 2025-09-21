@@ -1,6 +1,14 @@
 .card-shadow-primary {
   box-shadow: $box-shadow-primary;
 }
+
+.card-shadow-gray {
+  box-shadow: $box-shadow-gray;
+}
+.card-shadow-sm-gray{
+  box-shadow: $box-shadow-sm-gray;
+}
+
 .paragraph-body{
   font-weight: 400;
   font-size: 16px;
