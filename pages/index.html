@@ -5,53 +5,128 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>index</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
   </head>
   <body>
     <%- include('./layout/header'); -%>
-
-    <h1 class="index-title">我是首頁</h1>
-
-    <div class="card" style="width: 18rem">
-      <img src="../assets/images/dog.jpg" class="card-img-top" alt="cat" />
-      <div class="card-body">
-        <h5 class="card-title">卡片元件</h5>
-        <p class="card-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, odit, iusto odio assumenda alias id
-          nobis earum!
-        </p>
-      </div>
-    </div>
-
-    <!-- Modal 按鈕 -->
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-      打開 modal
-    </button>
-
-    <!-- Modal 元件 -->
-    <div
-      class="modal fade"
-      id="exampleModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal 標題</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">內容</div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
-            <button type="button" class="btn btn-primary">確定</button>
+    <!-- 表頭 -->
+     <section>
+      <div class="container-fluid title-banner px-0 ">
+        <div class="position-absolute title-depiction mt-21">
+          <img class="title-img mb-8 " src="/assets/images/hero_title.svg" alt="">
+          <div class="text-primary-600 d-flex align-items-center flex-column text-start">
+              <p class="mb-1"> 誕生於寶媽的心願，從一人轉向一群愛寶寶的父母 ——</p>
+              <p >想讓這些寶物延續溫度，傳遞給下一個需要的家庭。</p>
           </div>
         </div>
       </div>
-    </div>
+    </section>
+    <!-- 收尋列 -->
+     <section>
+        <div class="container px-0 search-bar mb-19 ">
+          <div class="row  d-flex justify-content-center   ">
+          <div class=" mb-3 px-0 position-relative col-10 d-flex justify-content-center bg-gray-100 py-4 px-12 rounded-pill card-shadow-gray ">
+            <button class="btn bg-white dropdown-toggle  rounded-end rounded-pill border border-1 " style="width: 212px" type="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</button>
+            <ul class="dropdown-menu mt-2 " style="width: 212px">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><a class="dropdown-item" href="#">Separated link</a></li>
+            </ul>
+            <!-- 輸入框 -->
+             <div class="dropdown flex-grow-1">
+             <button class=" end-0 btn btn-primary rounded-circle p-3 me-2 position-absolute end-0 top-50 translate-middle-y d-flex justify-content-center " >
+            <i class=" text-white  " style="width: 24px;height: 24px;" data-lucide="search"></i></button>
+            <input type="text " style="max-width: 100%;" class="form-control py-5 rounded-start rounded-pill" placeholder="輸入關鍵字..."  aria-label="Text input with dropdown button" type="submit" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+            <ul class="dropdown-menu w-100 mt-2" aria-labelledby="dropdownMenu2">
+              <li><button class="dropdown-item" type="button">Action</button></li>
+              <li><button class="dropdown-item" type="button">Another action</button></li>
+              <li><button class="dropdown-item" type="button">Something else here</button></li>
+            </ul>
+              </div>       
+            <!-- 送出 -->
+          </div>
+          </div>
+        </div>
+     </section>
+    <!--  熱門分類 -->
+    <section>
+      <div class="container">
+        <h2 class="h5 mb-8">熱門分類</h2>
+        <ul class="row gx-6">
+          <a class="col-3" href=""><li class=" bg-primary-50 hot-btn-rounded d-flex align-items-center ps-10 pe-6 py-8 ">
+            <div class=" ">
+            <img class="" src="/assets/images/category01_baby_clothes.svg" style="width: 72px;height: 72px;" alt="">
+            </div>
+            <div class="d-flex justify-content-center align-items-center " style="max-width: 170px; " >
+            <h3 class="h6 ms-6">嬰兒服飾</h3>
+            </div>
+          </li></a>
+          <a class="col-3" href=""><li class=" bg-primary-50 hot-btn-rounded d-flex align-items-center ps-10 pe-6 py-8 ">
+            <div class=" ">
+            <img class="" src="/assets/images/category02_boy_clothes.svg" style="width: 72px;height: 72px;" alt="">
+            </div>
+            <div class="d-flex justify-content-center align-items-center " style="max-width: 170px; " >
+            <h3 class="h6 ms-6 ">男孩服飾</h3>
+            </div>
+          </li></a>
+          <a class="col-3" href=""><li class=" bg-primary-50 hot-btn-rounded d-flex align-items-center ps-10 pe-6 py-8 ">
+            <div class=" ">
+            <img class="" src="/assets/images/category01_baby_clothes.svg" style="width: 72px;height: 72px;" alt="">
+            </div>
+            <div class="d-flex justify-content-center align-items-center " style="max-width: 170px; " >
+            <h3 class="h6 ms-6">女孩服飾</h3>
+            </div>
+          </li></a>
+          <a class="col-3" href=""><li class=" bg-primary-50 hot-btn-rounded d-flex align-items-center ps-10 pe-6 py-8 ">
+            <div class=" ">
+            <img class="" src="/assets/images/category01_baby_clothes.svg" style="width: 72px;height: 72px;" alt="">
+            </div>
+            <div class="d-flex justify-content-center align-items-center " style="max-width: 170px; " >
+            <h3 class="h6 ms-6">玩具</h3>
+            </div>
+          </li></a>
+          
+        </ul>
+      </div>
+    </section>
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <!-- <section>
+          <button type="button " class="btn rounded-circle position-relative button-Ghost-default-badge">
+             <i  class=" text-primary-300" data-lucide="handbag"></i>
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+              1
+              <span class="visually-hidden">unread messages</span>
+            </span>
+          </button> -->
+     
+
 
     <%- include('./layout/footer'); -%>
-
+    
+    
     <script type="module" src="../main.js"></script>
+
   </body>
 </html>
