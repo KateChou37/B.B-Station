@@ -47,10 +47,3 @@ git push -u origin main // 僅限第一次輸入，往後只需要輸入 git pus
 ```
 
 3. 初始化完畢後，執行 `npm run deploy` 指令進行自動化部署
-=======
-# B.B-Station
-# 團隊成員
-- 加菲
-- 温
-- Kate Chou
-- Doreen翠翠翠
