@@ -16,6 +16,9 @@
 }
 .search-bar{
    margin-top: -48px;
+   .button-text {
+    color: $gray-600;
+}
 }
 // 收尋攔
 .classification{
@@ -26,6 +29,53 @@
 .translate-middle{
         transform: translate(-79%, -13%) !important;
 }
-.hot-btn-rounded{
-    border-radius: 40px;
+
+.dropdown-toggle::after {
+  display: none !important;
+}
+//熱沒分類
+.hot-card{
+    padding: 30.5px 0px;
+    box-shadow: $box-shadow-primary;
+    color: $gray-600;
+    position: relative; 
+    &:hover{
+        background-image: url(/assets/images/37389e11e661e0dc50e11cd568561afc873e91dd.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        box-shadow: none;
+        .text-color-gray-600{
+            color: $white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.25);
+            }
+        .hot-card-img{
+            visibility: hidden;
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            inset: 0; // top:0; right:0; bottom:0; left:0 的 shorthand
+            background: rgba($black, 0.2);
+            z-index: 1; // 確保遮罩在背景上方
+            border-radius: 40px;
+            box-shadow: inset 0px 4px 0px 0px #00000033;
+        }
+        .text-color-gray-600 {
+            color: $white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+            position: relative;
+            z-index: 2; // 文字蓋在遮罩上
+            }
+
+            .hot-card-img {
+            visibility: hidden;
+            }
+    }
+    
+
+    .text-m-md-12{
+        margin: 0px -12px;
+    }
+    
 }
