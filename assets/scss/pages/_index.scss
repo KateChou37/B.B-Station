@@ -1,18 +1,37 @@
-.title-banner{
-    background-image:url(/assets/images/banner_desktop.jpg) ;
+
+.title-banner-md{
+    background-image:url(/assets/images/index/banner_desktop.jpg) ;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     height: 880px;
     border-radius: 0px 0px 128px 128px;
     .title-depiction{
-       left: calc(100% / 2); 
+       left: 50%;           /* 從中線開始 */
+       transform: none;     /* 不要 translateX */
+       overflow: hidden;    /* 超過就隱藏 */
    } 
-    .title-img{
+    .title-img-md{
         width: 564px;
         
     }
     
+}
+.lign-items-start{
+    margin-top: 152px;
+}
+
+.title-banner{
+    background-image:url(/assets/images/index/banner_mobile.jpg) ;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 100%;
+    border-radius: 0px 0px 48px 48px;
+    height: 675px;
+    width: 100%;
+    .title-img-md{
+    width: 192px;
+    }
 }
 .search-bar{
    margin-top: -48px;
@@ -39,8 +58,9 @@
     box-shadow: $box-shadow-primary;
     color: $gray-600;
     position: relative; 
+    transition: background 1.5s ease, color 1.5s ease, box-shadow 0.3s ease;
     &:hover{
-        background-image: url(/assets/images/37389e11e661e0dc50e11cd568561afc873e91dd.png);
+        background-image: url(/assets/images/index/babyclothes.png);
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -60,7 +80,12 @@
             z-index: 1; // 確保遮罩在背景上方
             border-radius: 40px;
             box-shadow: inset 0px 4px 0px 0px #00000033;
+            opacity: 0;               // 預設隱藏
+            transition: opacity 0.5s ease; // 淡入淡出     
         }
+         &:hover::before {
+            opacity: 1;
+         }
         .text-color-gray-600 {
             color: $white;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
@@ -71,11 +96,42 @@
             .hot-card-img {
             visibility: hidden;
             }
+        .text-color-gray-600,
+        .hot-card-img {
+            position: relative;
+            z-index: 1;
+            transition: color 0.3s ease;
+  }
     }
-    
+}
+.baby-clothes:hover{
+    background-image: url(/assets/images/index/babyclothes.png);            
+}
+.boy-clothes:hover{
+    background-image: url(/assets/images/index/boyclothes.png); 
+}
+.girl-clothes:hover{
+    background-image: url(/assets/images/index/girlclothes.png);
+}
+.toy:hover{
+    background-image: url(/assets/images/index/toy.png);
+}
+.books:hover{
+    background-image: url(/assets/images/index/books.png);
+}
+.mom-supplies:hover{
+    background-image: url(/assets/images/index/Mom-supplies.png);
+}
+.maternity-supplies:hover{
+    background-image: url(/assets/images/index/maternity-supplies.png);
+} 
+.safety-seat:hover{
+    background-image: url(/assets/images/index/safety-seat.png);
+} 
 
-    .text-m-md-12{
-        margin: 0px -12px;
+@media (min-width:576px){
+    .p-30-46{
+        width: 100%;
+        height: 100%;
     }
-    
 }

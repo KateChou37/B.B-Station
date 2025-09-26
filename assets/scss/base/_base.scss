@@ -15,6 +15,9 @@ svg[data-lucide] {
   vertical-align: middle;
 }
 /* 標籤的基本樣式 */
+*,*::after,*::before{
+  box-sizing: border-box;
+}
 body {
   font-family: "Swei Gothic TC", sans-serif;
   line-height: 1.5;
