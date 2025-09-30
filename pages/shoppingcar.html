@@ -8,6 +8,7 @@
   </head>
   <body>
     <%- include('./layout/header'); -%>
+
     <div class="container px-0">
       <!-- 購物流程步驟 -->
       <div class="d-flex justify-content-center py-10 border-bottom border-16">
@@ -21,6 +22,7 @@
         </div>
         <div class="d-flex text-center">
           <div class="mx-2">
+            <!-- <span class="hyphen">一</span> -->
             <img class="" src="/assets/images/購物車/Rect.png" alt="橫線" />
           </div>
           <div>
@@ -63,10 +65,10 @@
       <div class="pt-16 pb-20">
         <!-- 訂單確認 -->
         <div>
-          <h3 class="mb-12">購物籃｜訂單確認</h3>
+          <h3 class="mb-12">購物車｜訂單確認</h3>
           <div>
             <table class="table table-hover">
-              <thead class="table-light form-headfoot">
+              <thead class="table-light">
                 <tr class="shopping-item px-6">
                   <th scope="col">
                     <img
@@ -172,19 +174,21 @@
               <tfoot class="table-light">
                 <tr class="shopping-item px-6">
                   <th scope="row">
+                    <!-- <div class="d-flex text-center align-middle"> -->
                     <input
-                      class="form-check-input-lg text-center align-middle"
+                      class="form-check-input-lg"
                       type="checkbox"
                       name="addToCart"
                       id="checkboxNoLabel"
                       value=""
                       aria-label="加入購物車"
                     />
-                    <span class="my-4 ms-6">全選2件 </span>
+                    <p class="inline-block my-4 ms-6">全選2件</p>
+                    <!-- </div> -->
                   </th>
                   <div>
                     <td colspan="5" class="text-end h6">小計</td>
-                    <td class="h5 text-start ps-3">NT$ 1,380</td>
+                    <td class="h5 text-middle ps-3">NT$ 1,380</td>
                   </div>
                 </tr>
               </tfoot>
