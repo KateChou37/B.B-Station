@@ -8,7 +8,11 @@
 .card-shadow-sm-gray{
   box-shadow: $box-shadow-sm-gray;
 }
-
+.text-shadow{
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.25)}
+.radius-10{
+    border-radius: $border-radius-md-10 !important;
+}
 .paragraph-body{
   font-weight: 400;
   font-size: 16px;
