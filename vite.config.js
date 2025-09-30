@@ -23,7 +23,7 @@ function moveOutputPlugin() {
 }
 
 export default defineConfig({
-  base: '/B.B-Station/',
+  base: "/BB-Station/",
   plugins: [
     liveReload(["./layout/**/*.ejs", "./pages/**/*.ejs", "./pages/**/*.html"]),
     ViteEjsPlugin(),
